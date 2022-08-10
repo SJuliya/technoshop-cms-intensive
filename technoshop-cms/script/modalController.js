@@ -7,6 +7,8 @@ const openModal = (modal, classOpen) => {
 
 const closeModal = (modal, classOpen) => {
     modal.classList.remove(classOpen);
+    form.reset();
+    hidePreview();
 };
 
 export const modalController = ({ modal, btn, classOpen, classClose}) => {
@@ -17,8 +19,6 @@ export const modalController = ({ modal, btn, classOpen, classClose}) => {
     modal.addEventListener('click', (event) => {
         if(event.target === modal || event.target.classList.contains(classClose)) {
             closeModal(modal, classOpen);
-            hidePreview();
-            form.reset();
         }
     });
 };
