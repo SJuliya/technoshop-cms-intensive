@@ -6,10 +6,7 @@ import { formController } from "./formController.js";
 
 const init = () => {
     modalController({
-        modal,
         btn: modalBtn,
-        classOpen: 'd-block',
-        classClose: 'btn-close',
     });
 
     previewController();
