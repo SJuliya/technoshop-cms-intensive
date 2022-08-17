@@ -12,6 +12,7 @@ const openModal = (id) => {
 export const closeModal = () => {
     modal.classList.remove('d-block');
     form.reset();
+    form.imagesave.value = '';
     hidePreview();
 };
 
@@ -37,8 +38,8 @@ export const modalController = ({btn, delegation}) => {
         })
     }
 
-    modal.addEventListener('click', (event) => {
-        if(event.target === modal || event.target.classList.contains('btn-close')) {
+    modal.addEventListener('click', ({target}) => {
+        if(target === modal || target.classList.contains('btn-close')) {
             closeModal();
         }
     });

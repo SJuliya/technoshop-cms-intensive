@@ -64,7 +64,7 @@ iframe {
 
 .table-row:hover {
   background-color: beige;
-  cursor: ponter;
+  cursor: pointer;
 }
 
 .btn-table {

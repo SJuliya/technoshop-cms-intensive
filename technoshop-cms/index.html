@@ -107,6 +107,11 @@
                   <use xlink:href="#delete" />
                 </svg>
               </button>
+<!--              <button class="btn-table btn-edit">
+                <svg width="30" height="30">
+                  <use xlink:href="#edit" />
+                </svg>
+              </button>-->
             </td>
           </tr>
           <tr class="table-row table-goods-item" data-id="2206922442">
@@ -153,7 +158,7 @@
               </div>
               <hr>
               <label tabindex="0" for="image" class="btn btn-primary d-block mx-auto">Добавить изображение</label>
-              <input class="visually-hidden" tabindex="-1" type="file" name="image" id="image">
+              <input class="visually-hidden" tabindex="-1" type="file" name="image" id="image" accept=".png, .jpeg, .jpg">
               <input type="hidden" name="imagesave">
               <div class="wrapper-preview">
                 <img class="preview">
@@ -163,7 +168,6 @@
               <input type="hidden" name="id">
               <button type="submit" class="btn btn-primary modal-submit-btn">Добавить товар</button>
             </div>
-            
           </form>
           
         </div>
